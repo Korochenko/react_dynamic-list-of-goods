@@ -8,7 +8,7 @@ export const App: React.FC = () => {
   const [goods, setGoods] = React.useState<Good[]>([]);
   const [error, setError] = React.useState<string | null>(null);
 
-   const handleLoadAllGoods = () => {
+  const handleLoadAllGoods = () => {
     setError(null);
     getAll()
       .then(setGoods)
